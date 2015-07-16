@@ -2,8 +2,7 @@
 
 Used Ruby 2.2.0, Rails 4.2.0, AngularJS 1.4, Bootstrap 3
 
-Devise used for authorization
-RSpec + Capybara for tests
+Devise used for authorization, RSpec + Capybara for tests
 
 [Try out demo on Heroku](https://young-stream-5505.herokuapp.com/#/todo).
 
