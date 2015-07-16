@@ -1,0 +1,1 @@
+json.(@task, :id, :text, :priority, :deadline, :done, :project_id)

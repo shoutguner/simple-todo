@@ -1,0 +1,30 @@
+<div class="alert alert-danger col-xs-6 col-sm-6 col-md-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3" role="alert"
+     ng-show="error">
+    {{error}}
+</div>
+<form role="form" class="col-xs-6 col-sm-6 col-md-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3"
+      ng-submit="signIn(loginForm)" ng-init="loginForm = {}">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required="required" class="form-control" ng-model="loginForm.email">
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required="required" class="form-control"
+               ng-model="loginForm.password">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+    <span class="pull-right">
+        <label for="facebook_icon">Or sign in via facebook</label>
+        <img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_40x40.png" border="0"
+             id="facebook_icon" class="facebook-icon"
+             ng-click="signInFacebook()">
+    </span>
+    <br>
+    <br>
+    <a href="/#/sign_up">Or sign up if you don't have an account</a>
+</form>
+
+<li ng-show="user.id"><a ng-click='signOut()'>Sign out</a></li>

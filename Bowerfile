@@ -1,0 +1,8 @@
+asset 'angular'
+asset 'angular-route'
+asset 'bootstrap-sass-official'
+asset 'angular-bootstrap'
+asset 'ng-token-auth'
+asset 'angular-cookies'
+asset 'angular-resource'
+asset 'ng-file-upload'
