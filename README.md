@@ -6,7 +6,7 @@ Devise used for authorization, RSpec + Capybara for tests
 
 [Try out demo on Heroku](https://young-stream-5505.herokuapp.com/#/todo).
 
-**Keep in mind, that files you upload (comments attachments), will be deleted in a short term, or will not be saved at all, if they are large, because of Heroku file system settings, and you probably may not download these files.**
+**Keep in mind, that files you upload (comments attachments), will be deleted in a short term, or will not be saved at all, if they are large, because of Heroku file system settings, and you probably will not be able download these files.**
 
 **I recommend using small txt files for testing uploading and downloading.**
 
