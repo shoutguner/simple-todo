@@ -50,4 +50,10 @@ Rails.application.configure do
     # they will not be available for public (non-authenticated) downloading
     config.root = Rails.root
   end
+  
+  config.after_initialize do
+    # enable bullet gem
+    Bullet.enable = true
+    Bullet.rails_logger = true
+  end
 end
