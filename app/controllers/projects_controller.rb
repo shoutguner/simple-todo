@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @projects = current_user.projects.to_a
+    @projects = current_user.projects.includes(:tasks).to_a
   end
 
   def create
