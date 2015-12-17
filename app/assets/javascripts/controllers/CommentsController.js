@@ -43,7 +43,7 @@ controllers.controller('CommentsController', [
 
         $scope.saveCommentAndAttachment = function(task) {
             // with attachment text can be empty
-            // frontend validation;
+            // frontend validation
             task.commentFail = false;
             var textValidationResult = commentService.validateMaxCommentTextLength(task.newComment);
             task.commentFail = textValidationResult.fail;
@@ -56,8 +56,7 @@ controllers.controller('CommentsController', [
                 Upload.upload({
                     url: "/projects/"+task.project_id+"/tasks/"+task.id+"/comments.json",
                     fields: {project_id: task.project_id, task_id: task.id, 'comment[text]': task.newComment.text},
-                    file: validationResult.files,
-                    fileFormDataName: 'comment[attachments][]'
+                    file: validationResult.files
                 }).progress(function(p) {
                     task.newComment.progress = parseInt(100.0 * p.loaded / p.total);
                 }).success(function(response) {

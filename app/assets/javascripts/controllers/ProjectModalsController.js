@@ -2,13 +2,13 @@
 
 angular.module('controllers').controller('ProjectModalsController', [
     '$scope',
-    '$modal',
-    function ($scope, $modal) {
+    '$uibModal',
+    function ($scope, $uibModal) {
     $scope.newProjectName = "New TODO";
     $scope.animationsEnabled = true;
 
     $scope.open = function(size) {
-        var modalInstance = $modal.open({
+        var modalInstance = $uibModal.open({
             animation: $scope.animationsEnabled,
             templateUrl: 'addProjectModal.html',
             controller: 'ModalInstanceController',

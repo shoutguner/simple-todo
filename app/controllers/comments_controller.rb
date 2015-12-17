@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = @task.comments.build(comment_params)
-    @comment.attachments = params[:comment][:attachments]
+    @comment.attachments = params[:file].values unless params[:file].blank?
       if @comment.save
         render :show
       else
@@ -31,7 +31,11 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:text)
+    if !params[:comment].blank?
+      params.require(:comment).permit(:text)
+    else
+      {}
+    end
   end
 
   def find_task

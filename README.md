@@ -1,6 +1,6 @@
 ## README
 
-Used Ruby 2.2.0, Rails 4.2.0, AngularJS 1.4, Bootstrap 3
+Used Ruby 2.2.0, Rails 4.2.0, AngularJS 1.4.8, Bootstrap 3
 
 Devise used for authorization, RSpec + Capybara for tests
 

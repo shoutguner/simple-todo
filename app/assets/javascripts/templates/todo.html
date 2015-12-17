@@ -173,12 +173,12 @@
                             Comments (click to collapse):
                         </h4>
                         <div class="form-inline">
-                            <progressbar animate="true" value="task.newComment.progress"
+                            <uib-progressbar animate="true" value="task.newComment.progress"
                                          ng-init="task.newComment.progress = -1"
                                          ng-show="task.newComment.progress >= 0"
                                          type="success">
                                 <b>{{task.newComment.progress}}%</b>
-                            </progressbar>
+                            </uib-progressbar>
                                 <div class="alert alert-danger" role="alert"
                                      ng-show="task.commentFail"
                                      ng-repeat="error in task.errors">

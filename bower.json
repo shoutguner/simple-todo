@@ -1,0 +1,13 @@
+{
+  "name": "SimpleTODO",
+  "dependencies": {
+    "angular": "1.4.8",
+    "angular-route": "latest",
+    "bootstrap-sass-official": "latest",
+    "angular-bootstrap": "latest",
+    "ng-token-auth": "latest",
+    "angular-cookies": "latest",
+    "angular-resource": "latest",
+    "ng-file-upload": "latest"
+  }
+}

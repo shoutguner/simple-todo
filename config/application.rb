@@ -9,17 +9,17 @@ Bundler.require(*Rails.groups)
 module TaskManager
   class Application < Rails::Application
 
-
     # Bower asset paths
     root.join('vendor', 'assets', 'bower_components').to_s.tap do |bower_path|
-      # config.sass.load_paths << bower_path
       config.assets.paths << bower_path
     end
-# Precompile Bootstrap fonts
+    # Precompile Bootstrap fonts
     config.assets.precompile << %r(bootstrap-sass/assets/fonts/bootstrap/[\w-]+\.(?:eot|svg|ttf|woff2?)$)
-# Minimum Sass number precision required by bootstrap-sass
+    # Minimum Sass number precision required by bootstrap-sass
     ::Sass::Script::Value::Number.precision = [8, ::Sass::Script::Value::Number.precision].max
 
+    # config.assets.path << "#{Rails}/vendor/assets/fonts"
+    config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff)$)
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -35,7 +35,5 @@ module TaskManager
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-    # config.assets.path << "#{Rails}/vendor/assets/fonts"
-    config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff)$)
   end
 end

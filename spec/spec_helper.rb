@@ -30,6 +30,12 @@ RSpec.configure do |config|
     #     # => "be bigger than 2"
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
     expectations.syntax = :expect
+    # Use color in STDOUT
+    config.color = true
+    # Use color not only in STDOUT but also in pagers and files
+    config.tty = true
+    # Use the specified formatter
+    config.formatter = :documentation # :progress, :html, :textmate
   end
 
   # rspec-mocks config goes here. You can use an alternate test double

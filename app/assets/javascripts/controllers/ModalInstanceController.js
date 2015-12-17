@@ -2,10 +2,10 @@
 
 angular.module('controllers').controller('ModalInstanceController', [
     '$scope',
-    '$modalInstance',
+    '$uibModalInstance',
     'projectService',
     'Project',
-    function ($scope, $modalInstance, projectService, Project) {
+    function ($scope, $uibModalInstance, projectService, Project) {
         // default name
         $scope.newProjectName = 'New TODO';
 
@@ -25,7 +25,7 @@ angular.module('controllers').controller('ModalInstanceController', [
                     }else{
                         // passed backend validation
                         projectService.addProject(response);
-                        $modalInstance.close($scope.newProjectName);
+                        $uibModalInstance.close($scope.newProjectName);
                     }
                 }, function(error) {
                     //handle request error
@@ -39,6 +39,6 @@ angular.module('controllers').controller('ModalInstanceController', [
         };
 
         $scope.cancel = function () {
-            $modalInstance.dismiss('cancel');
+            $uibModalInstance.dismiss('cancel');
         };
     }]);

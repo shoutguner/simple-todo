@@ -23,7 +23,7 @@ class AttacmentUploader < CarrierWave::Uploader::Base
     "tmp/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  # for heroku only
+  # for heroku
   def cache_dir
     "tmp/uploads"
   end
