@@ -19,7 +19,7 @@ DeviseTokenAuth.setup do |config|
   # example, using the default '/omniauth', the github oauth2 provider will
   # redirect successful authentications to '/omniauth/github/callback'
 
-  config.omniauth_prefix = "/auth"
-  config.default_confirm_success_url = 'https://young-stream-5505.herokuapp.com/auth/facebook/callback'
+  # config.omniauth_prefix = "/auth"
+  # config.default_confirm_success_url = 'https://young-stream-5505.herokuapp.com/auth/facebook/callback'
 
 end

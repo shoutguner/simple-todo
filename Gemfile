@@ -20,7 +20,7 @@ gem 'jquery-rails'
 
 gem 'jbuilder', '~> 2.2.13'
 gem 'devise'
-gem 'devise_token_auth', git: 'https://github.com/jasonswett/devise_token_auth.git'
+gem 'devise_token_auth' #, git: 'https://github.com/jasonswett/devise_token_auth.git'
 gem 'omniauth-facebook'
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem 'jc-validates_timeliness'
