@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   before_action do
     if params[:provider] == 'facebook'
       reset_session
-      params[:provider] = 'facebook1'
+      params[:provider] = 'facebook'
     end
   end
 
