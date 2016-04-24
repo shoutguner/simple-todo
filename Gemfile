@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.3.0'
 
 gem 'rails', '4.2.0'
 
@@ -19,8 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 
 gem 'jbuilder', '~> 2.2.13'
-gem 'devise'
-gem 'devise_token_auth'
+gem 'devise', '3.5.1'
+gem 'devise_token_auth', '0.1.34'
 gem 'omniauth-facebook'
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem 'jc-validates_timeliness'
@@ -29,12 +29,13 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
-  gem 'selenium-webdriver'
-  gem 'factory_girl_rails'
+  gem 'selenium-webdriver', '~> 2.53.0'
+  gem 'factory_girl_rails', '4.5.0'
   gem 'faker'
   gem 'database_cleaner'
   # Detecting N+1 query problems
   gem 'bullet'
+
 end
 
 group :production do
