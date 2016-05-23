@@ -1,4 +1,1 @@
 ruby_version: ruby-2.3.0-p0
-
-hooks:
-  pre_setup: "gem install carrierwave -v '0.11.0'"
