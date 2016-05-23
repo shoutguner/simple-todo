@@ -4,9 +4,6 @@ ruby '2.3.0'
 
 gem 'rails', '4.2.0'
 
-# CI dependency
-gem 'mime-types-data', '~> 3.2016.0221'
-
 gem 'bower-rails'
 
 # Database
