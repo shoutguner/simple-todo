@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.2.13'
 gem 'devise', '3.5.1'
 gem 'devise_token_auth', '0.1.34'
 gem 'omniauth-facebook'
-gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
+gem 'carrierwave'
 gem 'jc-validates_timeliness'
 
 group :development, :test do
