@@ -1,0 +1,13 @@
+ruby_version: ruby-2.3.0-p0
+bundler_version: "1.12.2"
+
+test_pattern:
+  - spec/**/*_spec.rb
+
+rake:
+  rails_env: test
+
+postgresql:
+  version: '9.3'
+
+firefox: '46.0'
