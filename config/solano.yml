@@ -1,5 +1,5 @@
 ruby_version: ruby-2.3.0-p0
-#bundler_version: "1.12.2"
+bundler_version: "1.12.2"
 
 test_pattern:
   - spec/**/*_spec.rb
