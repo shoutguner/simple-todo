@@ -18,9 +18,9 @@ hooks:
     set -e
     date > $HOME/package_install.txt
     printenv
+    rbenv install -l > debug.txt
     bundle install
     bin/rake db:migrate RAILS_ENV=test
-    rbenv install -l > debug.txt
 
 collect:
   repo:
