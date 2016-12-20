@@ -20,8 +20,8 @@ hooks:
     printenv
     # rbenv install -l > debug.txt
     # rbenv versions > debug.txt
-    ruby -v > debug.txt
-    # rbenv global 2.3.0
+    # ruby -v > debug.txt
+    rbenv global 2.3.0
     bundle install
     bin/rake db:migrate RAILS_ENV=test
 
