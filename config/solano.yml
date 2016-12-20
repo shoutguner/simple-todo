@@ -24,6 +24,7 @@ hooks:
     # pwd > debug.txt
     cd $HOME
     rbenv local 2.3.0
+    cd $TDDIUM_REPO_ROOT
     ruby -v > debug.txt
     bundle install
     bin/rake db:migrate RAILS_ENV=test
