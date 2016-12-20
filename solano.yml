@@ -13,23 +13,23 @@ postgresql:
 
 firefox: '46.0'
 
-#hooks:
-#  package_setup: |
-#    set -e
-#    date > $HOME/package_install.txt
-#    printenv
-#    # rbenv install -l > debug.txt
-#    # rbenv versions > debug.txt
-#    # ruby -v > debug.txt
-#    # pwd > debug.txt
-#    cd $HOME
-#    rbenv local 2.3.0
-#    # rbenv rehash# permission denied
-#    cd $TDDIUM_REPO_ROOT
-#    gem install bundler
-#    ruby -v > debug.txt
-#    bundle install
-#    bin/rake db:migrate RAILS_ENV=test
-#collect:
-#  repo:
-#    - debug.txt
+hooks:
+  package_setup: |
+    set -e
+    date > $HOME/package_install.txt
+    printenv
+    # rbenv install -l > debug.txt
+    # rbenv versions > debug.txt
+    # ruby -v > debug.txt
+    # pwd > debug.txt
+    cd $HOME
+    rbenv local 2.3.0
+    # rbenv rehash# permission denied
+    cd $TDDIUM_REPO_ROOT
+    gem install bundler
+    ruby -v > debug.txt
+    bundle install
+    bin/rake db:migrate RAILS_ENV=test
+collect:
+  repo:
+    - debug.txt
