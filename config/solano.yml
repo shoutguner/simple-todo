@@ -19,3 +19,4 @@ hooks:
     date > $HOME/package_install.txt
     printenv
     bundle install
+    bin/rake db:migrate RAILS_ENV=test
