@@ -21,7 +21,8 @@ hooks:
     # rbenv install -l > debug.txt
     # rbenv versions > debug.txt
     # ruby -v > debug.txt
-    rbenv global 2.3.0
+    pwd > debug.txt
+    rbenv local 2.3.0
     bundle install
     bin/rake db:migrate RAILS_ENV=test
 
