@@ -24,6 +24,7 @@ hooks:
     # pwd > debug.txt
     cd $HOME
     rbenv local 2.3.0
+    rbenv rehash
     cd $TDDIUM_REPO_ROOT
     ruby -v > debug.txt
     bundle install
