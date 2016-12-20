@@ -13,9 +13,9 @@ postgresql:
 
 firefox: '46.0'
 
-  hooks:
-    package_setup: |
-      set -e
-      date > $HOME/package_install.txt
-      printenv
-      bundle install
+hooks:
+  package_setup: |
+    set -e
+    date > $HOME/package_install.txt
+    printenv
+    bundle install
