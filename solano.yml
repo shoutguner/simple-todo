@@ -14,7 +14,7 @@ postgresql:
 firefox: '46.0'
 
 hooks:
-  post_build: echo "POST BUILD HOOK TRIGGERED"
+#  post_build: echo "POST BUILD HOOK TRIGGERED"
   package_setup: |
     set -e
     date > $HOME/package_install.txt
