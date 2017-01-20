@@ -1,9 +1,9 @@
 ruby_version: ruby-2.3.0-p0
 bundler_version: "1.12.2"
 
-#test_pattern:
-#  - spec/controllers/*_spec.rb
-#  - spec/models/*_spec.rb
+test_pattern:
+  - spec/controllers/*_spec.rb
+  - spec/models/*_spec.rb
 
 rake:
   rails_env: test
@@ -35,14 +35,14 @@ firefox: '46.0'
 #  repo:
 #    - debug.txt
 
-profiles:
-  a:
-    test_pattern:
-      - spec/controllers/*_spec.rb
-  b:
-    test_pattern:
-      - spec/models/*_spec.rb
-plan:
-  - a
-  - b
+#profiles:
+#  a:
+#    test_pattern:
+#      - spec/controllers/*_spec.rb
+#  b:
+#    test_pattern:
+#      - spec/models/*_spec.rb
+#plan:
+#  - a
+#  - b
   
