@@ -4,6 +4,7 @@ bundler_version: "1.12.2"
 test_pattern:
   - spec/controllers/*_spec.rb
   - spec/models/*_spec.rb
+  - spec/**/*_spec.rb
 
 rake:
   rails_env: test
