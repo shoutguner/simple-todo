@@ -24,6 +24,7 @@ feature 'Edit task text', js: true do
     page.find('#task_id_0_edit').click
 
     expect(page).to have_content('Another text')
+    screenshot_and_save_page
     expect(page).to have_content('Fake expectation')
   end
 
