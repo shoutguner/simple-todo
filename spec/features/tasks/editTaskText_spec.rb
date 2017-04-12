@@ -11,7 +11,7 @@ feature 'Edit task text', js: true do
     @login_page.visit
   end
 
-  scenario 'edit and save valid task' do
+  scenario 'edit and save  valid task' do
     @login_page.sign_in(@user.email, @user.password)
     visit '#/todo'
 
