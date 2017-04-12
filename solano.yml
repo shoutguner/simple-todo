@@ -12,7 +12,7 @@ rake:
 postgresql:
   version: '9.3'
 
-firefox: '25.0'
+firefox: '31.0esr'
 
 #hooks:
 #  post_build: echo "POST BUILD HOOK TRIGGERED"
