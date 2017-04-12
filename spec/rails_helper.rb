@@ -32,7 +32,7 @@ require 'capybara-screenshot/rspec'
 ActiveRecord::Migration.maintain_test_schema!
 
 Capybara::Screenshot.register_filename_prefix_formatter(:rspec) do |example|
-  "screenshot_#{example.description.gsub(' ', '-').gsub(/^.*\/spec\//,'')}"
+  "screenshot_#{example.description.gsub(/^.*\/spec\//,'')}"
 end
 
 Capybara::Screenshot.append_timestamp = false
