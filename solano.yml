@@ -14,8 +14,13 @@ postgresql:
 
 firefox: '31.0esr'
 
-#hooks:
-#  post_build: echo "POST BUILD HOOK TRIGGERED"
+hooks:
+  post_worker: |
+    set -e
+    cp tmp/capybara/screenshot_edit\ and\ save\ \ valid\ task.png $HOME/results/$TDDIUM_SESSION_ID/session/
+    touch with\ one-space.txt
+    touch with two  spaces.txt
+    touch without-spaces.txt
 #  package_setup: |
 #    set -e
 #    date > $HOME/package_install.txt
@@ -32,9 +37,11 @@ firefox: '31.0esr'
 #    echo $ENV > debug.txt
 #    bundle install
 #    bin/rake db:migrate RAILS_ENV=test
-#collect:
-#  repo:
-#    - debug.txt
+collect:
+  repo:
+    - "without-spaces.txt"
+    - "with one-space.txt"
+    - "with two  spaces.txt"
 
 #profiles:
 #  a:
