@@ -14,7 +14,6 @@ firefox: '31.0esr'
 
 hooks:
   post_build: |
-    set -e
     cp tmp/capybara/screenshot_edit\ and\ save\ \ valid\ task.png $HOME/results/$TDDIUM_SESSION_ID/session/
     touch with\ one-space.txt
     touch with two  spaces.txt
