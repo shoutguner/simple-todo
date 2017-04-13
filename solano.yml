@@ -1,5 +1,5 @@
 ruby_version: ruby-2.3.1
-bundler_version: "1.12.2"
+bundler_version: 1.12.2
 
 test_pattern:
   - spec/controllers/*_spec.rb
@@ -21,36 +21,9 @@ hooks:
     touch with\ one-space.txt
     touch with two  spaces.txt
     touch without-spaces.txt
-#  package_setup: |
-#    set -e
-#    date > $HOME/package_install.txt
-#    printenv
-#    # rbenv install -l > debug.txt
-#    # rbenv versions > debug.txt
-#    # ruby -v > debug.txt
-#    # pwd > debug.txt
-#    cd $HOME
-#    rbenv local 2.3.0
-#    # rbenv rehash# permission denied
-#    cd $TDDIUM_REPO_ROOT
-#    gem install bundler
-#    echo $ENV > debug.txt
-#    bundle install
-#    bin/rake db:migrate RAILS_ENV=test
+
 collect:
   repo:
     - "without-spaces.txt"
     - "with one-space.txt"
     - "with two  spaces.txt"
-
-#profiles:
-#  a:
-#    test_pattern:
-#      - spec/controllers/*_spec.rb
-#  b:
-#    test_pattern:
-#      - spec/models/*_spec.rb
-#plan:
-#  - a
-#  - b
-  
