@@ -13,12 +13,12 @@ postgresql:
 firefox: '31.0esr'
 
 #cp tmp/capybara/screenshot_edit\ and\ save\ \ valid\ task.png $HOME/results/$TDDIUM_SESSION_ID/session/
-hooks:
-  post_build: |
-    touch with\ one-space.txt
-    touch with two  spaces.txt
-    touch without-spaces.txt
-    ls > without-spaces.txt
+#hooks:
+#  post_build: |
+#    touch with\ one-space.txt
+#    touch with two  spaces.txt
+#    touch without-spaces.txt
+#    ls > without-spaces.txt
 
 collect:
   repo:
