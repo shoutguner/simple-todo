@@ -20,4 +20,4 @@ collect:
   repo:
     - "without-spaces.txt"
     - "with one-space.txt"
-#    - "with two  spaces.txt"
+    - "with two  spaces.txt"
