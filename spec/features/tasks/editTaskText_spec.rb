@@ -25,7 +25,7 @@ feature 'Edit task text', js: true do
 
     expect(page).to have_content('Another text')
     #screenshot_and_save_page
-    expect(page).to have_content('Fake expectation')
+    #expect(page).to have_content('Fake expectation')
   end
 
   scenario 'edit and save invalid task with empty text' do
