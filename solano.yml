@@ -21,7 +21,7 @@ collect:
     - "without-spaces.txt"
     - "with one-space.txt"
     - "excon.log"
-    - "with two  spaces.txt"
+#    - "with two  spaces.txt"
 
 environment:
   'EXCON_DEBUG': 'true'
