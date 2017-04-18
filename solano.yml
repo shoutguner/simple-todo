@@ -21,3 +21,7 @@ collect:
     - "without-spaces.txt"
     - "with one-space.txt"
     - "with two  spaces.txt"
+
+environment:
+  'EXCON_DEBUG': 'true'
+  'DEBUG': 'true'
