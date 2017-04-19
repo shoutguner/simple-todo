@@ -21,8 +21,8 @@ collect:
   repo:
     - "without-spaces.txt"
     - "with one-space.txt"
-    - "../../../excon.log"
-#    - "with two  spaces.txt"
+    - "excon.log"
+    - "with two  spaces.txt"
 
 environment:
   'EXCON_DEBUG': 'true'
