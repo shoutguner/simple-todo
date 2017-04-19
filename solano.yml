@@ -14,6 +14,7 @@ firefox: '31.0esr'
 
 #cp tmp/capybara/screenshot_edit\ and\ save\ \ valid\ task.png $HOME/results/$TDDIUM_SESSION_ID/session/
 hooks:
+  package_setup: "bundle install"
   post_worker: "cat ~/excon.log"
 
 collect:
