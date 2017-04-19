@@ -15,7 +15,7 @@ firefox: '31.0esr'
 #cp tmp/capybara/screenshot_edit\ and\ save\ \ valid\ task.png $HOME/results/$TDDIUM_SESSION_ID/session/
 hooks:
   package_setup: "rbenv local 2.3.1 && gem install bundler && bundle install"
-  post_worker: "cat ~/excon.log"
+  post_worker: "cat ~/excon.log > $TDDIUM_REPO_ROOT/excon.log"
 
 collect:
   repo:
