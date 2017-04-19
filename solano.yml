@@ -14,7 +14,7 @@ firefox: '31.0esr'
 
 #cp tmp/capybara/screenshot_edit\ and\ save\ \ valid\ task.png $HOME/results/$TDDIUM_SESSION_ID/session/
 hooks:
-  post_worker: "cp ~/excon.log $TDDIUM_REPO_ROOT"
+  post_build: "cp ~/excon.log $TDDIUM_REPO_ROOT"
 
 collect:
   repo:
