@@ -22,6 +22,7 @@ collect:
     - "without-spaces.txt"
     - "with one-space.txt"
     - "excon.log"
+    - "../../../excon.log"
 #    - "with two  spaces.txt"
 
 environment:
