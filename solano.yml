@@ -17,4 +17,4 @@ collect:
     - "without-spaces.txt"
     - "with one-space.txt"
     - "fake.log"
-    - "with two  spaces.txt"
+    - "file with two spaces in it's name.txt"
