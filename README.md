@@ -1,5 +1,3 @@
-[![](https://ci.solanolabs.com:443/maxmal/simple-todo/badges/branches/master?badge_token=11c2b817887f1c6350f95c1a542ddbee8230676f)](https://ci.solanolabs.com:443/maxmal/simple-todo/suites/452368)
-
 ## README
 
 Used Ruby 2.3.0, Rails 4.2.0, AngularJS 1.4.8, Bootstrap 3
