@@ -2,7 +2,7 @@ ruby_version: ruby-2.3.1
 bundler_version: 1.12.2
 
 test_pattern:
-  - spec/**/*_spec.rb
+  - spec/routing/root_route_spec.rb
 
 rake:
   rails_env: test
@@ -14,7 +14,5 @@ firefox: '31.0esr'
 
 collect:
   repo:
-    - "without-spaces.txt"
     - "with one-space.txt"
-    - "fake.log"
     - "file with two  spaces in name.txt"
