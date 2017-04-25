@@ -12,7 +12,7 @@ postgresql:
 
 firefox: '31.0esr'
 
-collect:
-  repo:
-    - "with one-space.txt"
-    - "file with two  spaces in name.txt"
+#collect:
+#  repo:
+#    - "with one-space.txt"
+#    - "file with two  spaces in name.txt"
