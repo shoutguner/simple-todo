@@ -16,4 +16,5 @@ collect:
   repo:
     - "without-spaces.txt"
     - "with one-space.txt"
+    - "fake.log"
     - "with two  spaces.txt"
