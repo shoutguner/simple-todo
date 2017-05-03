@@ -14,6 +14,7 @@ RSpec.describe ProjectsController, type: :controller do
       it 'create should respond with 401' do
         xhr :post, :create, format: :json
         expect(response.status).to eq(401)
+        expect(false).to eq(true)
       end
 
       it 'destroy should respond with 401' do
