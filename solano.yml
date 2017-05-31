@@ -5,3 +5,13 @@ postgresql:
   version: '9.3'
 
 firefox: '31.0esr'
+
+notify:
+- channel: email
+  trigger-on: start
+  branch:
+    - feature/*
+    - hotfix/*
+  message: "Congratulations, testing of %repo%'s %branch% branch finished"
+  recipients: everyone
+  
