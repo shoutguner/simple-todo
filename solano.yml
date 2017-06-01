@@ -12,6 +12,6 @@ notify:
   branch:
     - feature/*
     - hotfix/*
-  message: "Congratulations, testing of %repo%'s %branch% branch finished"
+  message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
   recipients: everyone
   
