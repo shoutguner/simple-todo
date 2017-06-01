@@ -9,9 +9,7 @@ firefox: '31.0esr'
 notify:
 - channel: email
   trigger-on: start
-  branch:
-    - feature/*
-    - hotfix/*
+  branch: a.b/c.d
   message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
   recipients: everyone
   
