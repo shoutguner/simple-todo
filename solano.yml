@@ -5,3 +5,10 @@ postgresql:
   version: '9.3'
 
 firefox: '31.0esr'
+
+notify:
+- channel: hipchat
+  trigger-on: start
+  branch: *
+  room: sandbox
+  message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
