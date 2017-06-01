@@ -7,9 +7,8 @@ postgresql:
 firefox: '31.0esr'
 
 notify:
-- channel: email
+- channel: hipchat
+  room: sandbox
   trigger-on: start
   branch: a.b/c.d
   message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
-  recipients: everyone
-  
