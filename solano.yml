@@ -9,6 +9,5 @@ firefox: '31.0esr'
 notify:
 - channel: hipchat
   trigger-on: failed
-  branch: <script>alert('xss');</script>
   room: sandbox
-  message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
+  message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished without branch name definition"
