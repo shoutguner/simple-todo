@@ -12,3 +12,4 @@ notify:
   trigger-on: start
   branch: a.b/c.d
   message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
+
