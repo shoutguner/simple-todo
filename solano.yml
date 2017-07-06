@@ -13,4 +13,4 @@ notify:
   room: sandbox
   message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
 
-script: bin/test
+script: bin/scr_scr
