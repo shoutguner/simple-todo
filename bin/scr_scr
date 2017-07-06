@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 echo "this is test script"
 git --version
+echo "latest commit has been fetched"
