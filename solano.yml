@@ -12,4 +12,3 @@ notify:
   branch: normal
   room: sandbox
   message: "Congratulations, testing of %repo%'s %branch% | branch | <script>alert('xssed');</script> finished"
-
