@@ -8,7 +8,7 @@ firefox: '31.0esr'
 
 notify:
 - channel: hipchat
-  trigger-on: failed
+  trigger-on: done
   branch: normal
   room: sandbox
   message: "Congratulations, testing of %repo%'s %branch% | branch | <script>alert('xssed');</script> finished"
