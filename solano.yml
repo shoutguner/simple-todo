@@ -12,3 +12,4 @@ notify:
   branch: mas*er
   room: sandbox
   message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
+
