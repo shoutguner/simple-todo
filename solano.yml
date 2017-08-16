@@ -13,3 +13,17 @@ notify:
   room: sandbox
   message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
 
+plan:
+  - first
+  - second
+  - third
+profiles:
+  first:
+    test_pattern:
+      - spec/controllers/comments_controller_spec.rb
+  second:
+    test_pattern:
+      - spec/models/comment_spec.rb
+  third:
+    test_pattern:
+      - spec/routing/root_route_spec.rb
