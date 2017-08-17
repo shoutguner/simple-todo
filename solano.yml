@@ -32,38 +32,38 @@ profiles:
   a:
     tests:
       - "exit 0"
-    test_exclude_pattern:
-      - *_spec.rb
+    test_pattern:
+      - spec/**_test.rb
   b:
     tests:
       - "exit 0"
-    test_exclude_pattern:
-      - *_spec.rb
+    test_pattern:
+      - spec/**_test.rb
   c:
     tests:
       - "exit 0"
-    test_exclude_pattern:
-      - *_spec.rb
+    test_pattern:
+      - spec/**_test.rb
   d:
     tests:
       - "exit 0"
-    test_exclude_pattern:
-      - *_spec.rb
+    test_pattern:
+      - spec/**_test.rb
   e:
     tests:
       - "exit 0"
-    test_exclude_pattern:
-      - *_spec.rb
+    test_pattern:
+      - spec/**_test.rb
   f:
     tests:
       - "exit 0"
-    test_exclude_pattern:
-      - *_spec.rb
+    test_pattern:
+      - spec/**_test.rb
   g:
     tests:
       - "exit 0"
-    test_exclude_pattern:
-      - *_spec.rb
+    test_pattern:
+      - spec/**_test.rb
 pipeline:
   a:
     b:
