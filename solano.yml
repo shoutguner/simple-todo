@@ -6,6 +6,9 @@ postgresql:
 
 firefox: '31.0esr'
 
+environment:
+  'VARIABLE=': 'value'
+
 notify:
 - channel: hipchat
   trigger-on: passed
