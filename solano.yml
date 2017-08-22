@@ -6,8 +6,8 @@ postgresql:
 
 firefox: '31.0esr'
 
-environment:
-  'VARIABLE=': 'value'
+#environment:
+#  'VARIABLE=': 'value'
 
 notify:
 - channel: hipchat
