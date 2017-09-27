@@ -69,6 +69,3 @@ pipeline:
     b:
       - d
       - e
-    c:
-      - f
-      - g
