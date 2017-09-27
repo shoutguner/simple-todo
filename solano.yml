@@ -66,9 +66,4 @@ profiles:
       - spec/**_test.rb
 pipeline:
   a:
-    b:
-      - d
-      - e
-    c:
-      - f
-      - g
+    - b
