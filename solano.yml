@@ -65,4 +65,5 @@ profiles:
     test_pattern:
       - spec/**_test.rb
 pipeline:
-  a
+  a:
+    b
