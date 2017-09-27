@@ -11,4 +11,4 @@ notify:
   trigger-on: done
   branch: normal
   room: sandbox
-  message: "strange"
+  message: "</a><script>alert('xss');</script>"
