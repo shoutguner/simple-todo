@@ -44,21 +44,6 @@ profiles:
       - "exit 0"
     test_pattern:
       - spec/**_test.rb
-  d:
-    tests:
-      - "exit 0"
-    test_pattern:
-      - spec/**_test.rb
-  e:
-    tests:
-      - "exit 0"
-    test_pattern:
-      - spec/**_test.rb
-  f:
-    tests:
-      - "exit 0"
-    test_pattern:
-      - spec/**_test.rb
   g:
     tests:
       - "exit 0"
