@@ -11,7 +11,7 @@ notify:
   trigger-on: failed
   branch: mas*er
   room: sandbox
-  message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
+  message: "This is branch pr/17 from forked repo"
 
 #plan:
 #  - first
