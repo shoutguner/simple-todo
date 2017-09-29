@@ -11,7 +11,7 @@ notify:
   trigger-on: failed
   branch: mas*er
   room: sandbox
-  message: "pr/101"
+  message: "This is branch pr/17 from forked repo"
 
 #plan:
 #  - first
